@@ -19,6 +19,7 @@ app = Flask(__name__)
 #################################################
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/bellybutton.sqlite"
+print(app.config['SQLALCHEMY_DATABASE_URI'])
 db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
